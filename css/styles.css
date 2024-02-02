@@ -1,0 +1,156 @@
+
+body {
+    margin: 0;
+    padding: 0;
+  
+    height: 100vh;
+    width: 100vw;
+  
+    background-color: beige;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #container {
+  
+      height: 40em;
+      width: 75em;
+  
+      background-color: grey;
+      border-radius: 0.4em;
+  
+      border: 0.2em solid black;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #tv{
+
+      background-color: blue;
+      height:40em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+
+  }
+  #marco{
+
+      height: 28em;
+      width: 45em;
+
+      background-color: black;
+      border-radius: 2em;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+
+
+  #baseTv{
+
+    height: 5em;
+    width: 10em;
+
+    background-color: black;
+    border-radius: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #screen {
+  
+      height: 25em;
+      width: 40em;
+  
+      border-radius: 0.4em;
+     
+  }
+  
+  .basicScreen {
+      background-color: rgb(139, 139, 139);
+
+  }
+  
+  #remote {
+  
+      height: 25em;
+      width: 10em;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  
+      border-radius: 0.5em;
+  
+      background-color: khaki;
+  
+      margin-left: 10em;
+  }
+  .o1{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+
+    padding:1em;
+
+    background-color: blue;
+
+  }
+  .button {
+  
+      height: 2em;
+      width: 2em; 
+      border-radius: 50%;
+      margin:1em;
+  
+      background-color: red;
+  
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.2s;
+  }
+  
+  .button:hover{
+      transition: 0.2s;
+      background-color: darkred;
+  }
+  
+  .canal1 {
+      background-color: aqua;
+  }
+  
+  .canal2 {
+      background-color: purple;
+  }
+  
+  .canal3 {
+      background-color: greenyellow;
+  }
+  
+  .canal4 {
+      background-color: gold;
+  }
+  .canal5 {
+    background-color: rgb(252, 2, 223);
+  }
+
+  .canal6 {
+    background-color: rgb(17, 255, 203);
+  }
+   
