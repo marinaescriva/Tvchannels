@@ -16,7 +16,7 @@ body {
   #container {
   
       height: 40em;
-      width: 75em;
+      width: 60em;
   
       background-color: grey;
       border-radius: 0.4em;
@@ -29,7 +29,6 @@ body {
   }
   #tv{
 
-      background-color: blue;
       height:40em;
 
       display: flex;
@@ -53,14 +52,13 @@ body {
     
   }
 
-
   #baseTv{
 
     height: 5em;
     width: 10em;
 
     background-color: black;
-    border-radius: 1em;
+    border-radius: 20%;
 
     display: flex;
     justify-content: center;
@@ -91,7 +89,7 @@ body {
       justify-content: space-around;
       align-items: center;
   
-      border-radius: 0.5em;
+      border-radius: 0.2em;
   
       background-color: khaki;
   
@@ -104,7 +102,7 @@ body {
     justify-content: space-around;
     align-items:center;
 
-    padding:1em;
+    padding:0.3em;
 
     background-color: blue;
 
@@ -131,6 +129,28 @@ body {
       background-color: darkred;
   }
   
+  .buttonOnOff {
+  
+    height: 2em;
+    width: 4em; 
+    border-radius: 20%;
+    margin:1em;
+
+    background-color: red;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+.buttonOnOff:hover{
+    transition: 0.2s;
+    background-color: darkred;
+  }
+
   .canal1 {
       background-color: aqua;
   }
