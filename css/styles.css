@@ -91,7 +91,7 @@ body {
   
       border-radius: 0.2em;
   
-      background-color: khaki;
+      background-color: rgb(152, 151, 151);
   
       margin-left: 10em;
   }
@@ -104,7 +104,7 @@ body {
 
     padding:0.3em;
 
-    background-color: blue;
+    
 
   }
   .button {
@@ -113,10 +113,13 @@ body {
       width: 2em; 
       border-radius: 50%;
       margin:1em;
+
+      border-style:outset;
+      border-width: medium;
   
-      background-color: red;
+      background-color: rgb(181, 179, 179);
   
-      color: white;
+      color: rgb(72, 69, 69);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -126,17 +129,22 @@ body {
   
   .button:hover{
       transition: 0.2s;
-      background-color: darkred;
+      background-color: rgb(112, 112, 112);
+      border-style:inset;
+      border-width: medium;
   }
   
-  .buttonOnOff {
+  .buttonPower {
   
     height: 2em;
     width: 4em; 
     border-radius: 20%;
+    border-color:black;
+    border-style:outset;
+    border-width: medium;
     margin:1em;
 
-    background-color: red;
+    background-color: rgb(255, 30, 30);
 
     color: white;
     display: flex;
@@ -146,9 +154,10 @@ body {
     transition: 0.2s;
   }
 
-.buttonOnOff:hover{
+.buttonPower:hover{
     transition: 0.2s;
-    background-color: darkred;
+    background-color: rgb(171, 20, 20);
+    border-style:inset;
   }
 
   .canal1 {
@@ -172,5 +181,14 @@ body {
 
   .canal6 {
     background-color: rgb(17, 255, 203);
+  }
+
+  .on{
+
+    background-color: blueviolet;
+  }
+
+  .off{
+    background-color: cornflowerblue;
   }
    
