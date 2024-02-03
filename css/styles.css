@@ -74,9 +74,13 @@ body {
      
   }
   
-  .basicScreen {
-      background-color: rgb(139, 139, 139);
+  .screenColor {
+       /* Showed when tv is on*/
+       background-color: brown;
 
+  }
+  .screenBlack {
+      background-color: rgb(96, 96, 96); /* Showed when tv is off, is the basic screen */
   }
   
   #remote {

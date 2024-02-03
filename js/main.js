@@ -34,31 +34,54 @@
 // });
 
 let power = false;
-
 let pilot = document.getElementById("piloto");
-
 let onOrOff =document.getElementById("buttonPower");
+let screen = document.getElementById("screen");
 
 onOrOff.addEventListener('click', () => {
     power = !power; //after click on the tv is true, so its on now.
 
     console.log(power);
     if (power) {
+        screen.classList.remove("screenBlack")
+        screen.classList.add("screenColor") //screen is available. and the class is now: "basicScreen"
         pilot.classList.remove("pilotoOff"); //if power is true the class pilotoOff is deleted 
         pilot.classList.add("pilotoOn"); //and the class pilotoOn is added.
         console.log(pilot.classList);
     } else {
+        screen.classList.remove("screenColor")
+        screen.classList.add("screenBlack") //screen is available. and the class is now: "basicScreen"
         pilot.classList.remove("pilotoOn"); //but, to switch to off its necessary to delet the class on.
         pilot.classList.add("pilotoOff");
         console.log(pilot.classList);
     }
 });
 
- // while the buttonPower is true, the tv is on so you can press on the channels.
 
-// let encendida = console.log(pilot.classList);
+// while the buttonPower is true, the tv is on so you can press on the channels.
 
-// if(encendida == true) 
+// so, if pilotoOn is true, the tv is on - tvOn.
+
+// let tvOn = pilot.classList.value("pilotoOn");
+
+
+// if (power==true){
+
+//         const buttons = document.getElementsByClassName("button")
+
+//         let arrayButtons = Array.from(buttons)
+
+//         let screen = document.getElementById("screen")
+
+//         arrayButtons.map(
+//             item => {
+//                 item.addEventListener("click", (event) => {
+//                     screen.classList.remove(screen.classList[screen.classList.length - 1])
+//                     screen.classList.add("canal" + event.target.id.slice(-1))
+//                 })
+//             }
+//         )
+//         }
 
 
 
