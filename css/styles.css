@@ -133,8 +133,8 @@ body {
       border-style:inset;
       border-width: medium;
   }
-  
-  .buttonPower {
+/*   
+  #buttonPower {
   
     height: 2em;
     width: 4em; 
@@ -154,11 +154,30 @@ body {
     transition: 0.2s;
   }
 
-.buttonPower:hover{
+  #buttonPower:hover{
     transition: 0.2s;
     background-color: rgb(171, 20, 20);
     border-style:inset;
   }
+
+  #piloto{
+
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: blue;
+    justify-content: flex-end;
+  /* }
+
+  .pilotoOn{
+
+    background-color: rgb(17, 144, 36);
+
+  }
+  .pilotoOff{
+    background-color: red;
+    
+  } */ 
 
   .canal1 {
       background-color: aqua;
@@ -183,12 +202,5 @@ body {
     background-color: rgb(17, 255, 203);
   }
 
-  .on{
-
-    background-color: blueviolet;
-  }
-
-  .off{
-    background-color: cornflowerblue;
-  }
-   
+ 
+  
