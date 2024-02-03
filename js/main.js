@@ -13,19 +13,46 @@
 //         screen.classList.add("pilotoOn");       
 //     }
 // })
+
 let power = false;
+
+// let piloto = document.getElementByClass("pilotoOff");
+
+// document.getElementById('buttonPower').addEventListener('click', () => {
+//     power = !power;
+//     if (power) {
+//         piloto.classList.remove("pilotoOff");
+//         piloto.classList.add("pilotoOn");
+//         console.log(piloto.classList);
+//     }
+//     else {
+//         piloto.classList.remove("pilotoOn");
+//         piloto.classList.add("pilotoOff");
+//         console.log(piloto.classList);
+//     }
+//     console.log(power);
+// });
 
 document.getElementById('buttonPower').addEventListener('click', () => {
     power = !power;
+
+    console.log(power);
     if (power) {
-        getElementById("piloto").classList.remove("pilotoOff");
-        getElementById("piloto").classList.add("pilotoOn");
+        document.getElementById("piloto").classList.remove("pilotoOff");
+        document.getElementById("piloto").classList.add("pilotoOn");
+        console.log(document.getElementById("pilot").classList);
     } else {
-        getElementById("piloto").classList.remove("pilotoOn");
-        getElementById("piloto").classList.add("pilotoOff");
+        document.getElementById("piloto").classList.remove("pilotoOn");
+        document.getElementById("piloto").classList.add("pilotoOff");
+        console.log(document.getElementById("piloto").classList);
     }
-    // console.log(power);
 });
+
+
+
+
+
+
 
 
 

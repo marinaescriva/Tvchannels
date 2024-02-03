@@ -133,7 +133,7 @@ body {
       border-style:inset;
       border-width: medium;
   }
-/*   
+ 
   #buttonPower {
   
     height: 2em;
@@ -167,7 +167,7 @@ body {
     border-radius: 50%;
     background-color: blue;
     justify-content: flex-end;
-  /* }
+   }
 
   .pilotoOn{
 
@@ -177,7 +177,7 @@ body {
   .pilotoOff{
     background-color: red;
     
-  } */ 
+  } 
 
   .canal1 {
       background-color: aqua;
