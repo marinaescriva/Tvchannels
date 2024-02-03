@@ -14,7 +14,7 @@
 //     }
 // })
 
-let power = false;
+
 
 // let piloto = document.getElementByClass("pilotoOff");
 
@@ -33,21 +33,32 @@ let power = false;
 //     console.log(power);
 // });
 
-document.getElementById('buttonPower').addEventListener('click', () => {
-    power = !power;
+let power = false;
+
+let pilot = document.getElementById("piloto");
+
+let onOrOff =document.getElementById("buttonPower");
+
+onOrOff.addEventListener('click', () => {
+    power = !power; //after click on the tv is true, so its on now.
 
     console.log(power);
     if (power) {
-        document.getElementById("piloto").classList.remove("pilotoOff");
-        document.getElementById("piloto").classList.add("pilotoOn");
-        console.log(document.getElementById("pilot").classList);
+        pilot.classList.remove("pilotoOff"); //if power is true the class pilotoOff is deleted 
+        pilot.classList.add("pilotoOn"); //and the class pilotoOn is added.
+        console.log(pilot.classList);
     } else {
-        document.getElementById("piloto").classList.remove("pilotoOn");
-        document.getElementById("piloto").classList.add("pilotoOff");
-        console.log(document.getElementById("piloto").classList);
+        pilot.classList.remove("pilotoOn"); //but, to switch to off its necessary to delet the class on.
+        pilot.classList.add("pilotoOff");
+        console.log(pilot.classList);
     }
 });
 
+ // while the buttonPower is true, the tv is on so you can press on the channels.
+
+// let encendida = console.log(pilot.classList);
+
+// if(encendida == true) 
 
 
 
