@@ -17,11 +17,8 @@ body {
   
       height: 40em;
       width: 60em;
-  
-      background-color: grey;
+      
       border-radius: 0.4em;
-  
-      border: 0.2em solid black;
   
       display: flex;
       justify-content: center;
@@ -30,6 +27,7 @@ body {
   #tv{
 
       height:40em;
+
 
       display: flex;
       justify-content: center;
@@ -45,10 +43,11 @@ body {
 
       background-color: black;
       border-radius: 2em;
+      border: 0.3em solid rgb(188, 25, 25);
 
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items:center;
     
   }
 
@@ -69,6 +68,7 @@ body {
   
       height: 25em;
       width: 40em;
+      
   
       border-radius: 0.4em;
      
@@ -76,7 +76,8 @@ body {
   
   .screenColor {
        /* Showed when tv is on*/
-       background-color: brown;
+       background-color: bisque;
+       
 
   }
   .screenBlack {
@@ -166,10 +167,10 @@ body {
 
   #piloto{
 
-    width: 4em;
-    height: 4em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
-    justify-content: flex-end;
+  
    }
 
   .pilotoOn{
@@ -182,26 +183,26 @@ body {
     
   } 
 
-  .canal1 {
+  .channel1 {
       background-color: aqua;
   }
   
-  .canal2 {
+  .channel2 {
       background-color: purple;
   }
   
-  .canal3 {
+  .channel3 {
       background-color: greenyellow;
   }
   
-  .canal4 {
+  .channel4 {
       background-color: gold;
   }
-  .canal5 {
+  .channel5 {
     background-color: rgb(252, 2, 223);
   }
 
-  .canal6 {
+  .channel6 {
     background-color: rgb(17, 255, 203);
   }
 
