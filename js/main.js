@@ -1,37 +1,5 @@
 
-// const buttons = document.getElementsByClassName("button")
 
-// let arrayButtons = Array.from(buttons)
-
-// let screen = document.getElementById("screen")
-
-// let power = false;
-
-// document.getElementById("piloto").addEventListener("click", (evento) => {
-//     if (power) {
-//         screen.classList.remove("pilotoOff");
-//         screen.classList.add("pilotoOn");       
-//     }
-// })
-
-
-
-// let piloto = document.getElementByClass("pilotoOff");
-
-// document.getElementById('buttonPower').addEventListener('click', () => {
-//     power = !power;
-//     if (power) {
-//         piloto.classList.remove("pilotoOff");
-//         piloto.classList.add("pilotoOn");
-//         console.log(piloto.classList);
-//     }
-//     else {
-//         piloto.classList.remove("pilotoOn");
-//         piloto.classList.add("pilotoOff");
-//         console.log(piloto.classList);
-//     }
-//     console.log(power);
-// });
 
 let power = false; //because the tv starts off.
 
@@ -40,9 +8,11 @@ let onOrOff =document.getElementById("buttonPower"); // buttonPower selected
 let screen = document.getElementById("screen"); // screen selected
 
 // let tvStatus = screen.classList.remove("channel" && e.target.id.slice(-1))
+// screen.classList.add("screenBlack"); esto no funciona para que la screen sea "screenBlack" por encima de la class del cannel..
 
 onOrOff.addEventListener('click', () => {
-    
+
+    screen.classList.remove(screen.classList[screen.classList.length - 1]) //to delete all existing channel class
     power = !power; //after click on the tv is true, so its on now.
     // tvStatus = true;
 
@@ -77,32 +47,9 @@ arrayButtons.map(
             screen.classList.add("channel" + e.target.id.slice(-1))
 
             }
-
+            
         })
     }
 )
 
-
-
-
-
-// 
-
-// while the buttonPower is true, the tv is on so you can press on the channels.
-
-        // const buttons = document.getElementsByClassName("button")
-
-        // let arrayButtons = Array.from(buttons)
-
-        // screen = document.getElementById("screen")
-
-        // arrayButtons.map(
-        //     item => {
-        //         item.addEventListener("click", (event) => {
-        //             screen.classList.remove(screen.classList[screen.classList.length - 1])
-        //             screen.classList.add("channel" + event.target.id.slice(-1))
-        //         })
-        //     }
-        // )
-        // }
 

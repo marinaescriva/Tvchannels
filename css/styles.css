@@ -26,7 +26,7 @@ body {
   }
   #tv{
 
-      height:40em;
+      height:55em;
 
 
       display: flex;
@@ -38,16 +38,32 @@ body {
   }
   #marco{
 
-      height: 28em;
+      height: 40em;
       width: 45em;
 
-      background-color: black;
+      background-color: rgb(193, 75, 185);
       border-radius: 2em;
-      border: 0.3em solid rgb(188, 25, 25);
+      border: 0.3em solid rgb(131, 49, 125);
 
       display: flex;
       justify-content: center;
       align-items:center;
+      flex-direction: column;
+    
+  }
+
+  #marcoInt{
+
+    height: 30em;
+    width: 40em;
+
+    background-color: rgb(117, 46, 112);
+    border-radius: 2em;
+    border: 0.3em solid rgb(70, 69, 70);
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
     
   }
 
@@ -56,7 +72,7 @@ body {
     height: 5em;
     width: 10em;
 
-    background-color: black;
+    background-color: rgb(193, 75, 185);
     border-radius: 20%;
 
     display: flex;
@@ -66,11 +82,10 @@ body {
   }
   #screen {
   
-      height: 25em;
-      width: 40em;
-      
+      height: 28em;
+      width: 35em;
   
-      border-radius: 0.4em;
+      border-radius: 10% / 30%;
      
   }
   
@@ -81,7 +96,14 @@ body {
 
   }
   .screenBlack {
-      background-color: rgb(96, 96, 96); /* Showed when tv is off, is the basic screen */
+      background-color: rgb(93, 151, 206); /* Showed when tv is off, is the basic screen */
+      border-color: blue;
+      border-style: medium;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+
   }
   
   #remote {
@@ -170,6 +192,9 @@ body {
     width: 2em;
     height: 2em;
     border-radius: 50%;
+    margin-top: 2em;
+    border-color:black;
+    border-style: medium;
   
    }
 
