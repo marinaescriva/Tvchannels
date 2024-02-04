@@ -88,7 +88,24 @@ body {
       border-radius: 10% / 30%;
      
   }
-  
+  #hour{
+      
+      height: 4em;
+      width: 8em;
+
+      color:honeydew;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size:medium;
+    
+
+      margin: 23em;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+
+  }
+
   .screenColor {
        /* Showed when tv is on*/
        background-color: bisque;

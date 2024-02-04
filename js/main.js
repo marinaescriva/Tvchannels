@@ -1,6 +1,8 @@
 
 
 
+
+
 let power = false; //because the tv starts off.
 
 let pilot = document.getElementById("piloto"); // piloto selected
