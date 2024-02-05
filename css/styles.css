@@ -59,7 +59,7 @@ body {
 
     background-color: rgb(117, 46, 112);
     border-radius: 2em;
-    border: 0.3em solid rgb(70, 69, 70);
+    border: 0.3em solid rgb(158, 157, 158);
 
     display: flex;
     justify-content: center;
@@ -133,7 +133,7 @@ body {
       justify-content: space-around;
       align-items: center;
   
-      border-radius: 0.2em;
+      border-radius: 3em;
   
       background-color: rgb(152, 151, 151);
   
@@ -226,6 +226,7 @@ body {
   } 
 
   .channel1 {
+      
       background-color: aqua;
   }
   

@@ -9,14 +9,17 @@ let pilot = document.getElementById("piloto"); // piloto selected
 let onOrOff =document.getElementById("buttonPower"); // buttonPower selected
 let screen = document.getElementById("screen"); // screen selected
 
-// let tvStatus = screen.classList.remove("channel" && e.target.id.slice(-1))
-// screen.classList.add("screenBlack"); esto no funciona para que la screen sea "screenBlack" por encima de la class del cannel..
 
 onOrOff.addEventListener('click', () => {
 
+    // Date.prototype.addHours = function(h) {
+    //     this.setTime(this.getTime() + (h*60*60*1000));
+    //     return this;
+    //   }
+
     screen.classList.remove(screen.classList[screen.classList.length - 1]) //to delete all existing channel class
     power = !power; //after click on the tv is true, so its on now.
-    // tvStatus = true;
+    
 
     console.log(power);
     if (power) {
