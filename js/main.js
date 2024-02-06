@@ -1,8 +1,4 @@
 
-
-
-
-
 let power = false; //because the tv starts off.
 
 let pilot = document.getElementById("piloto"); // piloto selected
@@ -10,16 +6,25 @@ let onOrOff =document.getElementById("buttonPower"); // buttonPower selected
 let screen = document.getElementById("screen"); // screen selected
 
 
-onOrOff.addEventListener('click', () => {
+function formattedTime() { //obtiene hora del sistema,
+    const now = new Date(); //crea objeto de fecha
+    const hours = now.getHours().toString().padStart(2, '0'); // obtain the hour from the date
+    const minutes = now.getMinutes().toString().padStart(2, '0'); // calculate the hours and minutes defining 2 holds for value.
+    return `${hours}:${minutes}`;
+}
+function formattedDate() {   //read the system time status
+    const now = new Date(); //create the object "date"
+    const options = { year: 'numeric', month: 'long', day: 'numeric' }; //especifican que se debe incluir el día de la semana ('long'), el año, el nombre completo del mes y el día del mes.
+    return now.toLocaleDateString('en-EN', options);
+}
 
-    // Date.prototype.addHours = function(h) {
-    //     this.setTime(this.getTime() + (h*60*60*1000));
-    //     return this;
-    //   }
+    
+
+onOrOff.addEventListener('click', () => {
 
     screen.classList.remove(screen.classList[screen.classList.length - 1]) //to delete all existing channel class
     power = !power; //after click on the tv is true, so its on now.
-    
+    // tvStatus = true;
 
     console.log(power);
     if (power) {
@@ -52,9 +57,15 @@ arrayButtons.map(
             screen.classList.add("channel" + e.target.id.slice(-1))
 
             }
+            const today = document.createElement('div');
+            today.className = 'today';
+            today.innerHTML = `<p>Channel ${e.target.id.slice(-1)}</p><p>${formattedTime()}</p><p>${formattedDate()}</p>`;
+            screen.appendChild(today);
+            setTimeout(() => {
+                today.remove();
+            }, 1200); //Show it for 1.2sec
             
         })
     }
 )
-
 

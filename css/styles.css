@@ -86,7 +86,20 @@ body {
       width: 35em;
   
       border-radius: 10% / 30%;
+
+
      
+  }
+  .today{
+      width: 10em;
+      height: 10em;
+
+      background-color: none;
+
+      padding: 3em;
+      color: rgb(0, 0, 0);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bolder;
   }
   #hour{
       
@@ -227,15 +240,32 @@ body {
 
   .channel1 {
       
-      background-color: aqua;
+      background-image: url(../img/mr_burns.gif);
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* background-attachment:fixed; */
+      
+      
+      /*object-fit:cover;
+      
+       position: absolute;
+      margin-inline:auto;  */
   }
   
   .channel2 {
-      background-color: purple;
-  }
+
+    opacity:0.9;
+    -moz-opacity:0.45;
+    filter:alpha(opacity=45);
+  
+    background-image: url(../img/mr_burns.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
   
   .channel3 {
-      background-color: greenyellow;
+    
   }
   
   .channel4 {
