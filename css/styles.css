@@ -91,12 +91,13 @@ body {
      
   }
   .today{
-      width: 10em;
-      height: 10em;
+      width: 4em;
+      height: 8em;
 
-      background-color: none;
-
+      background-color:white;
+      
       padding: 3em;
+      position: fixed;
       color: rgb(0, 0, 0);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: bolder;
@@ -160,8 +161,6 @@ body {
     align-items:center;
 
     padding:0.3em;
-
-    
 
   }
   .button {
@@ -231,7 +230,6 @@ body {
   .pilotoOn{
 
     background-color: rgb(17, 144, 36);
-
   }
   .pilotoOff{
     background-color: red;
@@ -240,12 +238,14 @@ body {
 
   .channel1 {
       
-      background-image: url(../img/mr_burns.gif);
+    background-image: url(../img/couplesimpson.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+      /* background-image: url(../img/mr_burns.gif);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: contain; */
       /* background-attachment:fixed; */
-      
-      
       /*object-fit:cover;
       
        position: absolute;
@@ -254,10 +254,6 @@ body {
   
   .channel2 {
 
-    opacity:0.9;
-    -moz-opacity:0.45;
-    filter:alpha(opacity=45);
-  
     background-image: url(../img/mr_burns.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -265,18 +261,30 @@ body {
 }
   
   .channel3 {
-    
+    background-image: url(../img/bart.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   
   .channel4 {
-      background-color: gold;
+    background-image: url(../img/perfect.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .channel5 {
-    background-color: rgb(252, 2, 223);
+    background-image: url(../img/ralph.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .channel6 {
-    background-color: rgb(17, 255, 203);
+    background-image: url(../img/milhousee.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
  
