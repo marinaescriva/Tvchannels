@@ -121,7 +121,10 @@ body {
 
   .screenColor {
        /* Showed when tv is on*/
-       background-color: bisque;
+       background-image: url(../img/init_simpsons.gif);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
        
 
   }
