@@ -45,6 +45,7 @@ const buttons = document.getElementsByClassName("button") //all buttons are sele
 
 let arrayButtons = Array.from(buttons)
 
+// if (power!=false){
 arrayButtons.map(
     item => {
         item.addEventListener("click", (e) =>{
@@ -56,15 +57,14 @@ arrayButtons.map(
             screen.classList.remove(screen.classList[screen.classList.length - 1])
             screen.classList.add("channel" + e.target.id.slice(-1))
 
-            }
             const today = document.createElement('div');
             today.className = 'today';
-            today.innerHTML = `<p>Channel ${e.target.id.slice(-1)}</p><p>${formattedTime()}</p><p>${formattedDate()}</p>`;
+            today.innerHTML = `<p>Channel ${e.target.id.slice(-1)}</p>&nbsp;<p>${formattedTime()}</p>&nbsp;<p>${formattedDate()}</p>`;
             screen.appendChild(today);
             setTimeout(() => {
                 today.remove();
             }, 1200); //Show it for 1.2sec
-            
+        }
         })
     }
 )

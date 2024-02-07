@@ -86,11 +86,12 @@ body {
       width: 35em;
   
       border-radius: 10% / 30%;
+      
 
 
      
   }
-  .today{
+  /* .today{
       width: 4em;
       height: 8em;
 
@@ -101,6 +102,22 @@ body {
       color: rgb(0, 0, 0);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-weight: bolder;
+  } */
+
+  .today{
+      /* width: 4em;
+      height: 8em; */
+
+      /* background-color:white; */
+      display:flex;
+      padding: 3em;
+      position: fixed;
+      color: rgb(35, 241, 73);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      flex-direction: row;
+      
+
   }
   #hour{
       
@@ -241,7 +258,7 @@ body {
     background-image: url(../img/couplesimpson.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
       /* background-image: url(../img/mr_burns.gif);
       background-repeat: no-repeat;
       background-size: contain; */
@@ -257,34 +274,34 @@ body {
     background-image: url(../img/mr_burns.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
   
   .channel3 {
     background-image: url(../img/bart.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
   
   .channel4 {
     background-image: url(../img/perfect.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
   .channel5 {
     background-image: url(../img/ralph.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
 
   .channel6 {
     background-image: url(../img/milhousee.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
 
  
