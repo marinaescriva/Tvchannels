@@ -43,7 +43,7 @@ https://marinaescriva.github.io/Tvchannels/
 
 #### Power off / preview
 
-<img src="./img/home.jpg">
+<img src= >
 
 #### Tv on
 <img src="./img/menu.jpg">
